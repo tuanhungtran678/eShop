@@ -1,102 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>eShop - Your Online Store</title>
+    <title>eShop</title>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+    <!-- Sidebar -->
+
+    <aside id="sidebar" class="sidebar">
+
+        <div class="sidebar-header">
+
+            <h2>🛒 eShop</h2>
+
+            <button id="closeSidebar">
+                ✖
+            </button>
+
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                🏠 Trang chủ
+            </a>
+
+            <a href="products.html">
+                🛍 Sản phẩm
+            </a>
+
+            <a href="cart.html">
+                🛒 Giỏ hàng
+            </a>
+
+            <a href="rewards.html">
+                🎁 Phần thưởng
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <div id="overlay" class="overlay"></div>
+
     <!-- Header -->
 
     <header class="header">
+
+        <button id="menuBtn" class="menu-btn">
+            ☰
+        </button>
 
         <div class="logo">
             🛒 eShop
         </div>
 
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="products.html">Products</a>
-            <a href="cart.html">Cart</a>
-        </nav>
-
         <div class="coin-display">
             🪙 <span id="coinBalance">0</span>
         </div>
+
     </header>
 
     <!-- Hero -->
 
- <section class="hero">
+    <section class="hero">
 
-    <div class="hero-overlay">
+        <div class="hero-left">
 
-        <div class="hero-content">
+            <p class="hero-badge">
+                🔥 Khuyến mãi mùa hè - Giảm giá đến 50%
+            </p>
 
-            <h1>Welcome to eShop</h1>
+            <h1>
+                Chào mừng đến với eShop
+            </h1>
 
-            <p>
-                Discover amazing products at unbeatable prices.
+            <p class="hero-description">
+                Mua sắm thông minh với hàng ngàn sản phẩm
+                chất lượng và ưu đãi hấp dẫn mỗi ngày.
             </p>
 
             <a href="products.html" class="btn">
-                Shop Now
+                Mua Ngay
             </a>
 
         </div>
 
-    </div>
+        <div class="hero-right">
 
-</section>
-
-    </section>
-
-    <!-- Categories -->
-
-    <section class="categories">
-
-        <h2>Featured Categories</h2>
-
-        <div class="category-grid">
-
-            <div class="category-card">
-                🎮
-                <h3>Gaming</h3>
+            <div class="product-preview">
+                🎧 Gaming Headset
             </div>
 
-            <div class="category-card">
-                💻
-                <h3>Electronics</h3>
+            <div class="product-preview">
+                💻 Laptop
             </div>
 
-            <div class="category-card">
-                👕
-                <h3>Fashion</h3>
-            </div>
-
-            <div class="category-card">
-                📚
-                <h3>Books</h3>
+            <div class="product-preview">
+                📱 Smartphone
             </div>
 
         </div>
 
     </section>
-    <!-- Footer -->
-
-    <footer>
-
-        <p>
-            © 2026 tuanhungtran678. All rights reserved.
-        </p>
-
-    </footer>
 
     <script src="js/app.js"></script>
     <script src="js/coin.js"></script>
+
 </body>
 </html>
