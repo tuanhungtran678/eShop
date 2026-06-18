@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![eShop Banner](assets/images/banner.png)
+![eShop Banner](assets/image/banner.png)
 
 **A modern and lightweight online shopping platform built with HTML, CSS, and JavaScript.**
 
@@ -86,7 +86,7 @@ eShop/
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/eShop.git
+git clone https://github.com/tuanhungtran678/eShop.git
 ```
 
 ### Open the Project
@@ -166,6 +166,6 @@ This project is licensed under the MIT License.
 
 <div align="center">
 
-Made with ❤️ by the eShop Team
+Made with ❤️ by tuanhungtran678
 
 </div>
