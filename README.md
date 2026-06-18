@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![eShop Banner](assets/images/banner.png)
+![eShop Banner](assets/image/banner.png)
 
 **A modern and lightweight online shopping platform built with HTML, CSS, and JavaScript.**
 
