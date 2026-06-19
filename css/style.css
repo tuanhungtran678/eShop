@@ -162,8 +162,20 @@ body {
 ========================= */
 
 .hero {
-
     min-height: calc(100vh - 70px);
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.55),
+            rgba(0,0,0,.55)
+        ),
+        url("../assets/images/hero-light.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
 
     display: flex;
     align-items: center;
@@ -218,6 +230,32 @@ body {
     margin-bottom: 30px;
 
     max-width: 600px;
+}
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(79,167,238,.2),
+            rgba(0,0,0,.6)
+        );
+
+    z-index: 0;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+.hero-left, .hero-right {
+    position: relative;
+    z-index: 1;
 }
 
 .btn {
@@ -280,23 +318,35 @@ body {
 
     .hero {
 
-        flex-direction: column;
+        background-size: cover;
+
+        background-position: center;
+
+        padding: 40px 20px;
 
         text-align: center;
 
-        padding-top: 40px;
-    }
-
-    .hero h1 {
-        font-size: 2.8rem;
-    }
-
-    .hero-description {
-        margin-left: auto;
-        margin-right: auto;
     }
 
     .hero-right {
-        width: 100%;
+        display: none;
     }
+}
+
+body.light .hero {
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,.15),
+            rgba(255,255,255,.15)
+        ),
+        url("../assets/images/hero-light.png");
+}
+
+body.dark .hero {
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,.55),
+            rgba(0,0,0,.55)
+        ),
+        url("../assets/images/hero-dark.png");
 }
